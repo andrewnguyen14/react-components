@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './styles.scss';
 
 
 export default class FreeSnack extends Component {

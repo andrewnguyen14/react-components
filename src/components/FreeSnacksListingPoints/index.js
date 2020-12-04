@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import './styles.scss';
 import FreeSnack from '../FreeSnack/';
 
 const freeSnacksGrouped = [
   {img: "/images/beef-jerky.jpg", name:"Teriyaki Steak Jerky", points: 3 },
-  {img: "/images/beef-jerky.jpg", name:"Teriyaki Salmon Jerky", points: 3},
-  {img: "/images/almond-cinnamon.jpg", name:"Coconut Almond Buttercups", points: 2 },
-  {img: "/images/almond-cinnamon.jpg", name:"BBQ Almonds", points: 1 },
+  {img: "/images/salmon-jerky.jpg", name:"Teriyaki Salmon Jerky", points: 3},
+  {img: "/images/buttercups.jpg", name:"Coconut Almond Buttercups", points: 2 },
+  {img: "/images/almond-smoky-bbq.jpg", name:"BBQ Almonds", points: 1 },
   {img: "/images/almond-cinnamon.jpg", name:"Cinnamon Maple Almonds", points: 1 },
-  {img: "/images/almond-cinnamon.jpg", name:"Hearty Gronola", points: 1 },
+  {img: "/images/granola.jpg", name:"Hearty Gronola", points: 1 },
   ];
 
 export default class FreeSnacksListingPoints extends Component {
