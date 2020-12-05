@@ -6,8 +6,9 @@ const freeSnacksGrouped = [
   {img: "/images/beef-jerky.jpg", name:"Teriyaki Steak Jerky", points: 3 },
   {img: "/images/salmon-jerky.jpg", name:"Teriyaki Salmon Jerky", points: 3},
   {img: "/images/buttercups.jpg", name:"Coconut Almond Buttercups", points: 2 },
-  {img: "/images/almond-smoky-bbq.jpg", name:"BBQ Almonds", points: 1 },
+  {img: "/images/almond-smoky-bbq.jpg", name:"Smoky BBQ Almonds", points: 1 },
   {img: "/images/almond-cinnamon.jpg", name:"Cinnamon Maple Almonds", points: 1 },
+  {img: "/images/almond-lemon.jpg", name:"Lemon Chili Almonds", points: 1 },
   {img: "/images/granola.jpg", name:"Hearty Gronola", points: 1 },
   ];
 
@@ -58,7 +59,7 @@ export default class FreeSnacksListingPoints extends Component {
   render() {
     return (
       <div>
-        <div className="points">{this.state.pointsUsed}</div>
+        <div className="points"> Points Used: {this.state.pointsUsed}</div>
         <div className="snack-container-points">
           {
             freeSnacksGrouped.map(snack => {

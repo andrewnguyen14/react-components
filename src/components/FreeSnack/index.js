@@ -13,10 +13,10 @@ export default class FreeSnack extends Component {
         </div> 
         <div className="text-container">
           <div className="text">{snack.name}</div>
-          <div>{snack.points}</div>
+          <div>Snack Points: {snack.points}</div>
           <button>-</button>
           <div className="quantity">{this.props.itemQuantity}</div>
-          <button onClick={this.props.addFreeSnack.bind(snack)}>+</button>
+          <button onClick={this.props.addFreeSnack.bind(self, snack)}>+</button>
         </div>               
       </div>
     );
